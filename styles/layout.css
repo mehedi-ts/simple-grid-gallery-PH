@@ -5,13 +5,14 @@
 .contin {
   border: 1px solid rebeccapurple;
   display: grid;
-  gap: 3px;
+  gap: 7px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 250px) 80px 80px;
 }
 .box {
   background-color: gray;
-  padding: 6px;
+  padding: 12px;
+  border: 1px solid lime;
 }
 .sidebar {
   grid-row: span 5;
@@ -20,4 +21,17 @@
 .short {
   grid-row: span 1;
   grid-column: span 3;
+}
+@media screen and (max-width: 576px) {
+  .contin {
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-rows: repeat(6, 200px);
+  }
+
+  .sidebar,
+  .short {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
 }
