@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.contin {
+  border: 1px solid rebeccapurple;
+  display: grid;
+  gap: 3px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 250px) 80px 80px;
+}
+.box {
+  background-color: gray;
+  padding: 6px;
+}
+.sidebar {
+  grid-row: span 5;
+  grid-column: span 1;
+}
+.short {
+  grid-row: span 1;
+  grid-column: span 3;
+}
