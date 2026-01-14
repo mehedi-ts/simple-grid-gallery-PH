@@ -28,3 +28,18 @@ bonchito {
   grid-column: span 1;
   grid-row: span 1;
 }
+@media screen and (max-width: 576px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: repeat(6, 150px); */
+    gap: 6px;
+  }
+  .hero,
+  .pakna,
+  .normal,
+  .bonchito {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+}
