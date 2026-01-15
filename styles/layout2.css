@@ -46,3 +46,16 @@ footer {
     padding: 30px;
   }
 }
+
+@media screen and (min-width: 577px) and (max-width: 900px) {
+  .continer {
+    grid-template-areas:
+      "header header header header"
+      "nav nav nav nav"
+      "sidebar main main main"
+      "adv footer footer footer";
+  }
+  .continer > * {
+    padding: 20px;
+  }
+}
