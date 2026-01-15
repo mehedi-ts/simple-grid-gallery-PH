@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.continer > * {
+  border: 3px solid rgb(229, 176, 62);
+  padding: 80px;
+  background-color: rgb(246, 241, 220);
+
+  border-radius: 3px;
+}
+header {
+  grid-area: header;
+}
+nav {
+  grid-area: nav;
+}
+main {
+  grid-area: main;
+}
+#sidebar {
+  grid-area: sidebar;
+}
+#adv {
+  grid-area: adv;
+}
+footer {
+  grid-area: footer;
+}
+.continer {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "nav main main sidebar"
+    "nav main main adv"
+    "footer footer footer footer";
+  gap: 6px;
+}
+@media screen and (max-width: 576px) {
+  .continer {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .continer > * {
+    padding: 30px;
+  }
+}
